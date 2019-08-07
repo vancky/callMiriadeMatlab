@@ -188,7 +188,7 @@ classdef queryMiriade
 %             in meters. Longitudes are negative toward East. The sign + of 
 %             the longitude and latitude can be omitted. 
 %            or @0 (SSB) @sun @earth 
-%              eg. 'O44' '110.179 25.5 2000'
+%              eg. 'O44' '101.179 25.5 2000'
 %         
 %         Examples
 %         --------
@@ -200,8 +200,7 @@ classdef queryMiriade
 %         >>> ceres.data{:,'ra'}         
             switch nargin
                 case 1
-                    observatory='110.179 25.5 2000';% a default station for YAAT
-
+                    observatory='-101.179 25.5 2000';% a default station for YAAT
             end
             % queried fields (see Miriade website for details)
             % http://vo.imcce.fr/webservices/miriade/?ephemcc#outputoptions
